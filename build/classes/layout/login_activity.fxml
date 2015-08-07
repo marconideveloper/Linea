@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import marconi.utils.*?>
+<?import marconi.utils.widgets.*?>
+<?import javafx.geometry.*?>
+
+
+<fx:root type="Activity" prefWidth="740" prefHeight="500"   xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <marconi.utils.widgets.ToolBar fx:id="toolbar" style="-fx-background-color: -color-accent;  " />
+        <VBox Activity.topAnchor="0.0" Activity.rightAnchor="0.0" Activity.leftAnchor="0.0" Activity.bottomAnchor="0.0" spacing="8.0" alignment="TOP_CENTER" >
+            <children>
+                <EditText fx:id="username" hint="Nombre de usuario" />
+                <EditText fx:id="password" hint="Contraseña" passwordField="true" /> 
+                <ComboBox promptText="Estaciones" prefWidth="200"   >
+                    <VBox.margin><Insets top="16" bottom="16"  /></VBox.margin>
+                </ComboBox>
+                
+                <RippleButton fx:id="login" text="Iniciar"/>
+            </children>
+            <padding>
+                <Insets top="16" right="16.0" bottom="16.0" left="16.0"   />
+            </padding>
+        </VBox>
+    </children>
+</fx:root>

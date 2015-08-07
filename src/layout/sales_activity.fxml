@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import marconi.utils.*?>
+<?import marconi.utils.widgets.*?>
+
+<fx:root type="Activity" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <marconi.utils.widgets.ToolBar fx:id="toolbar" styleClass="with-tab"/>
+        <SlidingTabLayout fx:id="tab" Activity.leftAnchor="0"  Activity.rightAnchor="0" Activity.topAnchor="0" Activity.bottomAnchor="0"  />
+    </children>
+</fx:root>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import marconi.utils.widgets.*?>
+
+<fx:root type="AnchorPane" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ScrollPane AnchorPane.bottomAnchor="0"  AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+            <content>
+                <FlowPane fx:id="flowPane" alignment="CENTER" vgap="16" hgap="24"  >
+                    <children>
+                        
+                        <VBox fx:id="leftPane" alignment="TOP_CENTER" spacing="16"  > 
+                            <children> 
+                                <DatePicker fx:id="date" promptText="fechas" showWeekNumbers="false"  prefWidth="250"/>
+                                <ComboBox promptText="Origen" prefWidth="250" />
+                                <ComboBox promptText="Destino" prefWidth="250" />
+                            </children>
+                           
+                        </VBox >
+                        <VBox fx:id="rightPane" alignment="TOP_CENTER" spacing="16" >
+                            <children>
+                                <Label text="Horas de Viaje"/>
+                                <ListView fx:id="hoursTravelList" prefHeight="250" />
+                            </children>
+                           
+                        </VBox>   
+                        
+                          
+                    </children>
+                   <padding><javafx.geometry.Insets top="16" bottom="16" /></padding>
+                </FlowPane>  
+                
+            </content>
+            
+        </ScrollPane>
+        <FloatingButton fx:id="next" icon="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"  AnchorPane.rightAnchor="16.0" AnchorPane.bottomAnchor="16" />
+    </children>
+</fx:root>

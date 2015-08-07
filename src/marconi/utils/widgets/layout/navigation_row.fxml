@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="48.0" type="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <SVGPath fx:id="icon" content="M14,6H10V4H14M20,6H16V4L14,2H10L8,4V6H4C2.89,6 2,6.89 2,8V19A2,2 0 0,0 4,21H20A2,2 0 0,0 22,19V8C22,6.89 21.1,6 20,6Z" layoutX="10.0" layoutY="13.0" scaleX="1.2" scaleY="1.2" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="13.0" />
+      <Label fx:id="title" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

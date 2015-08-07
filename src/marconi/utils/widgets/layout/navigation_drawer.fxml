@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+
+<?import javafx.scene.layout.*?>
+<?import marconi.widgets.*?>
+
+<fx:root id="AnchorPane" prefHeight="400.0" prefWidth="500.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane fx:id="mainContent" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0" />
+      <ToolBar fx:id="toolbar" layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <RippleButton fx:id="homeButton" prefWidth="56" />
+         </items>
+      </ToolBar>
+      <Region fx:id="navLayer" opacity="0.0" style="-fx-background-color: rgba(0,0,0,0.5);" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="navContent" layoutX="98.0" layoutY="53.0" prefWidth="224.0" styleClass="nav-content" translateX="-224.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</fx:root>
